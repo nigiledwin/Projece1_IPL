@@ -2,6 +2,10 @@ import pandas as pd
 import numpy as np
 import os
 
+
+output_dir = "data/processed"
+os.makedirs(output_dir, exist_ok=True)
+
 #function to load csv to dataframe
 def load_data(data_url):
 
