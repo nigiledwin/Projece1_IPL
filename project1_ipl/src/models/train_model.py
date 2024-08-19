@@ -86,6 +86,16 @@ def preprocessing(X_train, y_train, X_test, y_test):
         mlflow.log_metric('acuracy',rmse)
         mlflow.log_param('max_depth', max_depth)
         mlflow.log_param('n_estimators', n_estimators)
+
+         # mlflow code
+        #mlflow.log_artifact("shap_waterfall.png")
+
+        mlflow.log_artifact(__file__)
+
+        mlflow.sklearn.log_model(pipe, "xgboost")
+
+        mlflow.set_tag('author','nigil')
+        mlflow.set_tag('modelipl','xgboost')
         
         
         return pipe, rmse,y_pred
