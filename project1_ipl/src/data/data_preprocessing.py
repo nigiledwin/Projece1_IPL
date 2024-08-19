@@ -16,7 +16,7 @@ def load_data(data_url):
         print(f"Eroor loading data:{e}")
         return None
 
-data_url=r"C:\Python_Projects\IPL_MLOPS_Aug\ipl_mlops_aug\data\raw\all_season_details.csv"
+data_url=r"C:\Python_Projects\ML_Projects_with_MLOPS\project1_ipl\data\raw\all_season_details.csv"
 
 df=load_data(data_url)
 
